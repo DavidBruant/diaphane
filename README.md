@@ -17,3 +17,19 @@ Le projet diaphane compile et affiche les [Répertoires d'Informations Publiques
 - Fournir la liste des documents dans le RIP
 - Donner une forme de notion de "complétion du RIP" ([les documents du RIP doivent être mis en open data](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033205512&cidTexte=LEGITEXT000031366350))
 - Creér une sorte de "template de RIP" par type de collectivité
+
+
+## Ressources
+
+### Fond de carte
+
+Créé avec MapBox Studio : https://www.mapbox.com/studio/styles/davidbruant/cjibrpi0z00qf2sobe9x98lp7/
+
+### Données
+
+- Coordonnées des villes: [API BAN](https://adresse.data.gouv.fr/api)
+
+
+## Licence
+
+[CC 0 1.0](LICENSE)

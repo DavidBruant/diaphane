@@ -1,0 +1,93 @@
+[
+    {
+        "nom": "Paris",
+        "coordonnées": {
+            "longitude": 2.3469,
+            "latitude": 48.8589
+        }
+    },
+    {
+        "nom": "Lyon",
+        "coordonnées": {
+            "longitude": 4.8353,
+            "latitude": 45.7579
+        }
+    },
+    {
+        "nom": "Dijon",
+        "coordonnées": {
+            "longitude": 5.041742,
+            "latitude": 47.322982
+        }
+    },
+    {
+        "nom": "Rennes",
+        "coordonnées": {
+            "longitude": -1.681632,
+            "latitude": 48.113844
+        }
+    },
+    {
+        "nom": "Orléans",
+        "coordonnées": {
+            "longitude": 1.903836,
+            "latitude": 47.901977
+        }
+    },
+    {
+        "nom": "Ajaccio",
+        "coordonnées": {
+            "longitude": 8.735937,
+            "latitude": 41.92499
+        }
+    },
+    {
+        "nom": "Strasbourg",
+        "coordonnées": {
+            "longitude": 7.746735,
+            "latitude": 48.58353
+        }
+    },
+    {
+        "nom": "Lille",
+        "coordonnées": {
+            "longitude": 3.05644,
+            "latitude": 50.631564
+        }
+    },
+    {
+        "nom": "Caen",
+        "coordonnées": {
+            "longitude": -0.370637,
+            "latitude": 49.181339
+        }
+    },
+    {
+        "nom": "Bordeaux",
+        "coordonnées": {
+            "longitude": -0.579717,
+            "latitude": 44.837663
+        }
+    },
+    {
+        "nom": "Toulouse",
+        "coordonnées": {
+            "longitude": 1.441019,
+            "latitude": 43.604268
+        }
+    },
+    {
+        "nom": "Marseille",
+        "coordonnées": {
+            "longitude": 5.3806,
+            "latitude": 43.2804
+        }
+    },
+    {
+        "nom": "Nantes",
+        "coordonnées": {
+            "longitude": -1.554456,
+            "latitude": 47.216354
+        }
+    }
+]
