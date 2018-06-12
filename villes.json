@@ -4,55 +4,65 @@
         "coordonnées": {
             "longitude": 2.3469,
             "latitude": 48.8589
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Lyon",
         "coordonnées": {
             "longitude": 4.8353,
             "latitude": 45.7579
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Dijon",
         "coordonnées": {
             "longitude": 5.041742,
             "latitude": 47.322982
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Rennes",
         "coordonnées": {
             "longitude": -1.681632,
             "latitude": 48.113844
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Orléans",
         "coordonnées": {
             "longitude": 1.903836,
             "latitude": 47.901977
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Ajaccio",
         "coordonnées": {
             "longitude": 8.735937,
             "latitude": 41.92499
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Strasbourg",
         "coordonnées": {
             "longitude": 7.746735,
             "latitude": 48.58353
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Lille",
         "coordonnées": {
             "longitude": 3.05644,
             "latitude": 50.631564
+        },
+        "statut_RIP": {
+            "Open data": "http://opendata.bordeaux.fr/"
         }
     },
     {
@@ -60,6 +70,9 @@
         "coordonnées": {
             "longitude": -0.370637,
             "latitude": 49.181339
+        },
+        "statut_RIP":  {
+            "RIP": "http://opendata.bordeaux.fr/"
         }
     },
     {
@@ -67,6 +80,10 @@
         "coordonnées": {
             "longitude": -0.579717,
             "latitude": 44.837663
+        },
+        "statut_RIP": {
+            "RIP": "http://opendata.bordeaux.fr/",
+            "Open data": "http://opendata.bordeaux.fr/"
         }
     },
     {
@@ -74,20 +91,23 @@
         "coordonnées": {
             "longitude": 1.441019,
             "latitude": 43.604268
-        }
+        },
+        "statut_RIP": "AUCUN"
     },
     {
         "nom": "Marseille",
         "coordonnées": {
             "longitude": 5.3806,
             "latitude": 43.2804
-        }
+        },
+        "statut_RIP": "INCONNU"
     },
     {
         "nom": "Nantes",
         "coordonnées": {
             "longitude": -1.554456,
             "latitude": 47.216354
-        }
+        },
+        "statut_RIP": "AUCUN"
     }
 ]

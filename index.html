@@ -19,6 +19,23 @@
         .map {
             height: 100vh;
         }
+
+        .INCONNU{
+            fill: darkgray;
+        }
+
+        .AUCUN{
+            fill: darkred;
+        }
+
+        .rip{
+            fill: darkgreen;
+        }
+
+        .open-data{
+            stroke: gold;
+            stroke-width: 4px;
+        }
     </style>
 
     <script crossorigin="anonymous" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=all"></script>
@@ -40,13 +57,19 @@
 
             d3.json('./villes.json')
             .then(villes => {
-                for(const v of villes){
+                for(const {nom, coordonnées, statut_RIP} of villes){
+                    statut_RIP
+
                     L.circleMarker(
-                        [v.coordonnées.latitude, v.coordonnées.longitude],
+                        [coordonnées.latitude, coordonnées.longitude],
                         {
+                            radius: 20,
                             stroke: false,
-                            fillColor: 'blue',
-                            fillOpacity: 0.9
+                            fill: false,
+                            className: typeof statut_RIP === 'string' ? statut_RIP : ([
+                                statut_RIP['Open data'] ? 'open-data': undefined,
+                                statut_RIP['RIP'] ? 'rip': 'AUCUN'
+                            ].filter(e => !!e).join(' '))
                         }    
                     ).addTo(map)
                 }
