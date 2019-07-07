@@ -1,0 +1,5 @@
+FROM mongo:4.0.10-xenial
+
+VOLUME /data/db
+
+EXPOSE 8000
