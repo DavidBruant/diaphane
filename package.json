@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon -r esm src/index.js",
+    "start:prod": "node -r esm src/index.js",
     "load:db": "node -r esm scripts/loadDb.js"
   },
   "repository": {
@@ -24,6 +26,10 @@
   "dependencies": {
     "csv-parser": "^2.3.0",
     "esm": "^3.2.25",
+    "express": "^4.17.1",
     "mongodb": "^3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
