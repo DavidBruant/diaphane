@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "load:db": "node -r esm src/loadDb.js"
+    "load:db": "node -r esm scripts/loadDb.js"
   },
   "repository": {
     "type": "git",
