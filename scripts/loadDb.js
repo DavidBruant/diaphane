@@ -2,9 +2,9 @@ import { createReadStream } from 'fs';
 import { MongoClient } from 'mongodb';
 import csv from 'csv-parser';
 
-const data = '/Users/Romain/Downloads/BalanceSPL_Fonction_2018_Juin2019.csv';
+const data = './data/BalanceSPL_Fonction_2018_Juin2019.csv';
 
-const url = 'mongodb://localhost:8000';
+const url = 'mongodb://localhost:27017';
 const dbName = 'diaphane';
 
 const BATCH_SIZE = 1000000;

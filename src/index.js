@@ -3,10 +3,12 @@ import { Server } from 'http';
 import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
 
-const url = 'mongodb://localhost:8000';
+const network = process.env.NODE_ENV === 'development' ? 'localhost' : 'mongo';
+
+const url = `mongodb://${network}:27017`;
 const dbName = 'diaphane';
 
-const PORT = process.env.PORT || 4444;
+const PORT = 4000;
 
 const app = express();
 var http = Server(app);

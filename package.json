@@ -8,8 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon -r esm src/index.js",
-    "start:prod": "node -r esm src/index.js",
+    "start:db": "docker run -p 127.0.0.1:27017:27017 -d mongo:4.1.13-bionic",
+    "prestart:dev": "npm run start:db",
+    "start:dev": "NODE_ENV=development nodemon -r esm src/index.js",
+    "start:prod": "NODE_ENV=production node -r esm src/index.js",
+    "prestart": "docker-compose build",
+    "start": "docker-compose up",
     "load:db": "node -r esm scripts/loadDb.js"
   },
   "repository": {

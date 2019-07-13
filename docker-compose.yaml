@@ -1,8 +1,14 @@
 version: '3.7'
 services:
   mongo:
+    image: mongo:4.1.13-bionic
+  server:
     build:
       context: .
-      dockerfile: Dockerfile_mongo
+      dockerfile: Dockerfile_server
+    environment:
+      NODE_ENV: production
+    depends_on:
+      - mongo
     ports:
-      - "8000:27017"
+      - 4000:4000
