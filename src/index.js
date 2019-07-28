@@ -11,7 +11,7 @@ const dbName = 'diaphane';
 const PORT = 4000;
 
 const app = express();
-var http = Server(app);
+const http = Server(app);
 
 app.use(bodyParser.json());
 
