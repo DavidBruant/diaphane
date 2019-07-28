@@ -4,10 +4,30 @@
 
 Le projet Diaphane/Finances a pour ambition d'offrir une interface et une API pour afficher les données financières de toutes les collectivités de France.
 
+## Usage
+
+Vous devez avoir installé [Node](https://nodejs.org/en/), [Docker](https://www.docker.com/) et [Docker-compose](https://docs.docker.com/compose/install/).
+
+Téléchargez les [données de 2018](https://www.data.gouv.fr/fr/datasets/r/442c3564-14ef-4d80-af3a-09c73afd0c06), dézippez les, et placez le CSV dans le dossier `data`.
+
+### Dévelopement
+
+Lancement de l'environnement de dev
+
+```bash
+npm install
+npm run start:dev
+```
+
+Chargement de la DB
+
+```bash
+npm run load:db
+```
+
 ### Ressources
 
 #### [Données](https://www.data.gouv.fr/fr/datasets/balances-comptables-des-collectivites-et-des-etablissements-publics-locaux-avec-la-presentation-croisee-nature-fonction-2018/)
-
 
 ## RIP
 
@@ -22,14 +42,13 @@ Ce morceau du projet diaphane est mis en pause le temps de développer la partie
 ### Un jour
 
 - Augmenter le scope
-    - augmenter le nombre de villes
-    - créer une autre carte avec les métropoles
-    - créer une autre carte avec les départements
-    - créer une autre carte avec les régions
+  - augmenter le nombre de villes
+  - créer une autre carte avec les métropoles
+  - créer une autre carte avec les départements
+  - créer une autre carte avec les régions
 - Fournir la liste des documents dans le RIP
 - Donner une forme de notion de "complétion du RIP" ([les documents du RIP doivent être mis en open data](https://www.legifrance.gouv.fr/affichCodeArticle.do?idArticle=LEGIARTI000033205512&cidTexte=LEGITEXT000031366350))
 - Creér une sorte de "template de RIP" par type de collectivité
-
 
 ### Ressources
 
@@ -40,7 +59,6 @@ Créé avec MapBox Studio: https://www.mapbox.com/studio/styles/davidbruant/cjib
 #### Données
 
 - Coordonnées des villes: [API BAN](https://adresse.data.gouv.fr/api)
-
 
 ## Licence
 

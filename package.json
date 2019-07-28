@@ -1,0 +1,39 @@
+{
+  "name": "diaphane",
+  "version": "1.0.0",
+  "description": "## Finances",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:db": "docker run -p 127.0.0.1:27017:27017 -d mongo:4.1.13-bionic",
+    "prestart:dev": "npm run start:db",
+    "start:dev": "NODE_ENV=development nodemon -r esm src/index.js",
+    "start:prod": "NODE_ENV=production node -r esm src/index.js",
+    "prestart": "docker-compose build",
+    "start": "docker-compose up",
+    "load:db": "node -r esm scripts/loadDb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidBruant/diaphane.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidBruant/diaphane/issues"
+  },
+  "homepage": "https://github.com/DavidBruant/diaphane#readme",
+  "dependencies": {
+    "csv-parser": "^2.3.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
