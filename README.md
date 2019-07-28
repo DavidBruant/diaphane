@@ -6,7 +6,7 @@ Le projet Diaphane/Finances a pour ambition d'offrir une interface et une API po
 
 ## Usage
 
-Vous devez avoir installé [Node](https://nodejs.org/en/) et [Docker](https://www.docker.com/).
+Vous devez avoir installé [Node](https://nodejs.org/en/), [Docker](https://www.docker.com/) et [Docker-compose](https://docs.docker.com/compose/install/).
 
 Téléchargez les [données de 2018](https://www.data.gouv.fr/fr/datasets/r/442c3564-14ef-4d80-af3a-09c73afd0c06), dézippez les, et placez le CSV dans le dossier `data`.
 
