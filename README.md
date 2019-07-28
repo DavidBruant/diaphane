@@ -12,17 +12,22 @@ Téléchargez les [données de 2018](https://www.data.gouv.fr/fr/datasets/r/442c
 
 ### Dévelopement
 
-Lancement de l'environnement de dev
+Installation
 
 ```bash
 npm install
-npm run start:dev
 ```
 
-Chargement de la DB
+Intégration des données (_N'oubliez pas de lancer votre démon Docker !_)
 
 ```bash
-npm run load:db
+npm run init
+```
+
+Lancement de l'environnement de dev
+
+```bash
+npm run start:dev
 ```
 
 ### Ressources
