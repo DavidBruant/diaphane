@@ -9,12 +9,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:db": "docker run -p 127.0.0.1:27017:27017 -d mongo:4.1.13-bionic",
+    "preinit": "npm run start:db",
+    "init": "node -r esm scripts/index.js",
     "prestart:dev": "npm run start:db",
     "start:dev": "NODE_ENV=development nodemon -r esm src/index.js",
     "start:prod": "NODE_ENV=production node -r esm src/index.js",
     "prestart": "docker-compose build",
-    "start": "docker-compose up",
-    "load:db": "node -r esm scripts/loadDb.js"
+    "start": "docker-compose up"
   },
   "repository": {
     "type": "git",
@@ -28,10 +29,15 @@
   },
   "homepage": "https://github.com/DavidBruant/diaphane#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
     "csv-parser": "^2.3.0",
     "esm": "^3.2.25",
     "express": "^4.17.1",
-    "mongodb": "^3.2.7"
+    "format-number": "^3.0.0",
+    "log-update": "^3.2.0",
+    "mongodb": "^3.2.7",
+    "node-fetch": "^2.6.0",
+    "unzipper": "^0.10.1"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
